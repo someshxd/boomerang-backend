@@ -12,7 +12,7 @@ const HEART_IMAGE_PATH = "./heart.png";
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 
 app.use(cors());
 
