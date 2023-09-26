@@ -27,6 +27,10 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
+app.get("/", (req, res) => {
+  res.status(200).send("Server is up and running!");
+});
+
 app.post("/processVideo", upload.single("video"), (req, res) => {
   if (!req.file) {
     return res.status(400).send("No file uploaded.");
