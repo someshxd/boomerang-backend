@@ -6,8 +6,7 @@ const path = require("path");
 const cors = require("cors");
 const axios = require("axios");
 // const fs = require("fs");
-const S3_BUCKET_NAME = "cyclic-magenta-rose-bream-boot-ap-southeast-1";
-const fs = require('@cyclic.sh/s3fs')(S3_BUCKET_NAME)
+const fs = require('@cyclic.sh/s3fs')(process.env.S3_BUCKET_NAME)
 
 const HEART_IMAGE_PATH = "./heart.png";
 
