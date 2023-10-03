@@ -78,6 +78,8 @@ app.post("/processVideo", upload.single("video"), (req, res) => {
           "upload/f_gif/e_boomerang/e_loop/"
         );
 
+        axios.get(url);
+
         fs.unlinkSync(outputVideo);
         fs.unlinkSync(inputVideo);
 
