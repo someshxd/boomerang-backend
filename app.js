@@ -47,7 +47,7 @@ app.post("/processVideo", upload.single("video"), (req, res) => {
     .complexFilter([
       {
         filter: "scale",
-        options: "1024:1366", // Resize the video to 2048x2732
+        options: "2048:2732", // Resize the video to 2048x2732
         outputs: "scaled_video",
       },
       {
