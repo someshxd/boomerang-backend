@@ -14,7 +14,7 @@ const s3 = new AWS.S3({
   secretAccessKey: process.env.SECRET_ACCESS_KEY
 });
 
-const S3_BUCKET_NAME = "boomerang-gif-bucket";
+const S3_BUCKET_NAME = process.env.S3_BUCKET_NAME;
 
 // const HEART_IMAGE_PATH = "./heart.png";
 const HEART_IMAGE_PATH = "./heart_scaled_down.png";
